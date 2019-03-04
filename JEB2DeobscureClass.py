@@ -52,11 +52,14 @@ class JEB2AutoRename(Runnable):
                     sourceStr = str(unit.getString(sourceIndex))
                     if '.java' in sourceStr:
                         sourceStr = sourceStr[:-5]
-
+                    else:
+                        #filter SourceFile BUGLY
+                        #print(sourceStr)
+                        continue
                     # print(clazz.getName(True), sourceIndex, sourceStr, clazz)
                     if clazz.getName(True) != sourceStr:
                         self.comment_class(unit, clazz, clazz.getName(True))  # Backup origin clazz name to comment
-                        self.rename_class(unit, clazz, sourceStr, True)  # Rename to source name
+                        self.rename_class(unit, clazz, clazz.getName(True) +'_' + sourceStr, True)  # Rename to source name
 
     def rename_class(self, unit, originClazz, sourceName, isBackup):
         actCtx = ActionContext(unit, Actions.RENAME, originClazz.getItemId(), originClazz.getAddress())
