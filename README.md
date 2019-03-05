@@ -16,3 +16,6 @@
   1. .source "Base64.java",JEB2.2.x是默认不显示这些调试信息的,根据以下步骤在设置中打开:Edit -> Options -> Engines -> 修改ShowDebugDirectives的值为true(点一下就好).
   2. 因为无法获取内部类名所以无法还原内部类.
   3. 因为是全项目的重命名,根据APK类名的数量可能会有些慢大概要等几分钟
+  
+* CollapseAll.py
+  收起JEB的包名
