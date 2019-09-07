@@ -1,9 +1,12 @@
+# JEB1的api https://www.pnfsoftware.com/jeb/apidoc/reference/packages.html
+# JEB2的api https://www.pnfsoftware.com/jeb2/apidoc/reference/packages.html
 # JebScripts
 
   JEB运行.py步骤
   1.搭建环境
   1.1. http://www.jython.org/downloads.html这个网站下载独立的jar文件jython-standalone-2.7.0.jar
   1.2. jython-standalone-2.7.0.jar放到程序目录的scripts目录下
+  1.3. 编辑->选项,client的ScriptsFolder的路径 E:\JEB.android.decompiler.3.0.0.201808031948Pro\scripts
   2.运行
      文件->脚本->运行脚本 然后点击的py脚本即可
      
@@ -19,3 +22,7 @@
   
 * CollapseAll.py
   收起JEB的包名
+
+* JEB2AutoRenameByTypeInfo.py
+  https://blog.flanker017.me/writing-jeb2-plugin/
+  
